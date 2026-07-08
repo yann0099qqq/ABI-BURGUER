@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ABI burguer - Hamburgueria sofisticada com cardápio premium, combos, smash burgers, sobremesas, delivery pelo WhatsApp e experiência inspirada em grandes ídolos." />
+  <meta name="keywords" content="ABI burguer, hamburgueria, hambúrguer artesanal, smash burger, delivery, combo, batata frita" />
+  <meta name="author" content="ABI burguer" />
+  <title>ABI burguer | Hamburgueria Premium V5</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="main-header" id="topo">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark glass-nav">
+      <div class="container">
+        <a class="navbar-brand logo" href="#inicio" aria-label="Página inicial ABI burguer">
+          <span class="logo-icon"><i class="fa-solid fa-burger"></i></span>
+          <span>ABI <strong>burguer</strong></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="#cardapio">Cardápio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#promocoes">Promoções</a></li>
+            <li class="nav-item"><a class="nav-link" href="#famosos">Famosos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nós</a></li>
+            <li class="nav-item"><a class="nav-link" href="#avaliacoes">Avaliações</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          </ul>
+          <a href="#cardapio" class="btn btn-order ms-lg-3">Peça Online</a>
+          <button class="cart-button ms-lg-2" id="abrirCarrinho" aria-label="Abrir carrinho">
+            <i class="fa-solid fa-cart-shopping"></i><span id="cartCount">0</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section section-padding" id="inicio">
+      <div class="hero-glow glow-one"></div>
+      <div class="hero-glow glow-two"></div>
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 reveal">
+            <span class="badge-premium"><i class="fa-solid fa-crown"></i> Experiência premium & sofisticada</span>
+            <h1>O sabor que conquista na primeira mordida!</h1>
+            <p class="hero-text">Na ABI burguer, cada pedido é pensado como uma experiência de alto padrão: carnes artesanais, pão brioche macio, queijos selecionados, molhos autorais e apresentação impecável para quem ama hambúrguer de verdade.</p>
+            <div class="hero-actions">
+              <a href="#cardapio" class="btn btn-primary-neon">Ver Cardápio</a>
+              <a href="#contato" class="btn btn-outline-neon">Fazer Pedido</a>
+            </div>
+            <div class="hero-highlights">
+              <div><i class="fa-solid fa-truck-fast"></i> Entrega rápida</div>
+              <div><i class="fa-solid fa-star"></i> Qualidade premium</div>
+              <div><i class="fa-solid fa-gem"></i> Linha signature</div>
+            </div>
+            <div class="mascot-card" aria-label="Mascote da ABI burguer">
+              <div class="mascot">
+                <div class="mascot-crown"><i class="fa-solid fa-crown"></i></div>
+                <div class="mascot-bun top"></div>
+                <div class="mascot-face">
+                  <span class="eye"></span><span class="smile"></span><span class="eye"></span>
+                </div>
+                <div class="mascot-cheese"></div>
+                <div class="mascot-meat"></div>
+                <div class="mascot-bun bottom"></div>
+              </div>
+              <div>
+                <strong>Conheça o Abizito!</strong>
+                <span>O mascote exclusivo que representa o sabor premium da ABI burguer.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 reveal delay-1">
+            <div class="premium-hero-card">
+              <div class="hero-main-photo">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80" alt="Hambúrguer gourmet artesanal da ABI burguer" />
+                <div class="price-float"><span>A partir de</span><strong>R$ 19,90</strong></div>
+              </div>
+              <div class="idol-strip" aria-label="Área de inspiração com famosos">
+                <article>
+                  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Neymar_-_FC_Barcelona_-_2015.jpg?width=400" alt="Imagem pública de Neymar Junior" />
+                  <strong>Neymar Jr.</strong>
+                  <span>inspiração: ousadia</span>
+                </article>
+                <article>
+                  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cristiano_Ronaldo_2275_(cropped).jpg?width=400" alt="Imagem pública de Cristiano Ronaldo" />
+                  <strong>Cristiano Ronaldo</strong>
+                  <span>inspiração: excelência</span>
+                </article>
+                <article>
+                  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lionel-Messi-Argentina-2022-FIFA-World-Cup.jpg?width=400" alt="Imagem pública de Lionel Messi" />
+                  <strong>Lionel Messi</strong>
+                  <span>inspiração: magia</span>
+                </article>
+              </div>
+              <p class="idol-disclaimer">Imagens usadas como inspiração visual. Não representa parceria, patrocínio ou endosso dos famosos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="counter-section reveal" id="contador">
+      <div class="container">
+        <div class="counter-grid">
+          <div class="counter-card"><strong data-target="12500">0</strong><span>Hambúrgueres vendidos</span></div>
+          <div class="counter-card"><strong data-target="8700">0</strong><span>Clientes satisfeitos</span></div>
+          <div class="counter-card"><strong data-target="6">0</strong><span>Anos de experiência</span></div>
+          <div class="counter-card"><strong data-target="49" data-decimal="true">0</strong><span>Avaliação média</span></div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section-padding idols-section" id="famosos">
+      <div class="container">
+        <div class="section-title reveal">
+          <span>Campanha visual</span>
+          <h2>Sabor inspirado em grandes ídolos</h2>
+          <p>Uma área sofisticada para destacar personalidade, performance e presença de marca.</p>
+        </div>
+        <div class="row g-4 align-items-stretch">
+          <div class="col-md-6 col-xl-3 reveal">
+            <article class="idol-card large-idol">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Neymar_-_FC_Barcelona_-_2015.jpg?width=700" alt="Imagem pública de Neymar Junior">
+              <div><span>Signature</span><h3>Neymar Jr. Style</h3><p>Um visual jovem, ousado e chamativo para a capa principal da marca.</p></div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-3 reveal delay-1">
+            <article class="idol-card large-idol">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cristiano_Ronaldo_2275_(cropped).jpg?width=700" alt="Imagem pública de Cristiano Ronaldo">
+              <div><span>Premium</span><h3>CR7 Excellence</h3><p>Energia de alto desempenho, sofisticação e padrão elevado.</p></div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-3 reveal delay-2">
+            <article class="idol-card large-idol">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lionel-Messi-Argentina-2022-FIFA-World-Cup.jpg?width=700" alt="Imagem pública de Lionel Messi">
+              <div><span>Legend</span><h3>Messi Magic</h3><p>Inspiração em precisão, criatividade e sabor que decide o jogo.</p></div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-3 reveal delay-3">
+            <div class="campaign-box">
+              <i class="fa-solid fa-trophy"></i>
+              <h3>Linha dos Campeões</h3>
+              <p>Itens especiais com nomes inspirados em velocidade, força, luxo, magia e excelência.</p>
+              <a href="#cardapio" class="btn btn-primary-neon">Ver itens especiais</a>
+            </div>
+          </div>
+        </div>
+        <p class="small-note reveal">Observação: os famosos aparecem apenas como inspiração visual do layout. A ABI burguer não declara parceria comercial ou autorização de imagem.</p>
+      </div>
+    </section>
+
+    <section class="section-padding" id="cardapio">
+      <div class="container">
+        <div class="section-title reveal">
+          <span>Cardápio completo</span>
+          <h2>Escolha seu favorito</h2>
+          <p>Pesquise, filtre por categoria, adicione ao carrinho e salve seus favoritos.</p>
+        </div>
+
+        <div class="menu-tools reveal">
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" id="searchInput" placeholder="Pesquisar produto..." aria-label="Pesquisar produto" />
+          </div>
+          <div class="coupon-box">
+            <input type="text" id="couponInput" placeholder="Cupom: ABI10" aria-label="Cupom de desconto" />
+            <button id="applyCoupon">Aplicar</button>
+          </div>
+        </div>
+
+        <div class="category-filter reveal" id="categoryFilter" aria-label="Filtro de categorias">
+          <button class="active" data-category="Todos">Todos</button>
+          <button data-category="Hambúrgueres Artesanais">Hambúrgueres Artesanais</button>
+          <button data-category="Smash Burgers">Smash Burgers</button>
+          <button data-category="Combos">Combos</button>
+          <button data-category="Batatas Fritas">Batatas Fritas</button>
+          <button data-category="Bebidas">Bebidas</button>
+          <button data-category="Sucos Naturais">Sucos Naturais</button>
+          <button data-category="Refrigerantes">Refrigerantes</button>
+          <button data-category="Doces">Doces</button>
+          <button data-category="Sobremesas">Sobremesas</button>
+        </div>
+
+        <div class="row g-4" id="productGrid"></div>
+        <p class="no-products d-none" id="noProducts">Nenhum produto encontrado.</p>
+      </div>
+    </section>
+
+    <section class="section-padding promo-section" id="promocoes">
+      <div class="container">
+        <div class="section-title reveal">
+          <span>Ofertas especiais</span>
+          <h2>Promoções ABI burguer</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3 reveal"><div class="promo-card"><i class="fa-solid fa-heart"></i><h3>Combo Casal</h3><p>2 burgers + 2 bebidas + batata grande.</p><strong>R$ 59,90</strong></div></div>
+          <div class="col-md-6 col-lg-3 reveal delay-1"><div class="promo-card"><i class="fa-solid fa-users"></i><h3>Combo Família</h3><p>4 burgers + 4 bebidas + 2 batatas.</p><strong>R$ 119,90</strong></div></div>
+          <div class="col-md-6 col-lg-3 reveal delay-2"><div class="promo-card"><i class="fa-solid fa-clock"></i><h3>Happy Hour</h3><p>Descontos especiais das 18h às 20h.</p><strong>20% OFF</strong></div></div>
+          <div class="col-md-6 col-lg-3 reveal delay-3"><div class="promo-card"><i class="fa-solid fa-ticket"></i><h3>Cupom ABI10</h3><p>Use no carrinho e ganhe desconto.</p><strong>10% OFF</strong></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding" id="sobre">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 reveal">
+            <div class="about-image">
+              <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=900&q=80" alt="Hambúrguer artesanal com pão brioche" />
+            </div>
+          </div>
+          <div class="col-lg-6 reveal delay-1">
+            <div class="section-title text-start mb-3">
+              <span>Sobre a ABI burguer</span>
+              <h2>Feita para quem ama hambúrguer de verdade</h2>
+            </div>
+            <p class="about-text">A ABI burguer nasceu para entregar uma experiência mais sofisticada no delivery: visual elegante, preparo cuidadoso e combinações que valorizam textura, aroma e sabor. Trabalhamos com ingredientes selecionados, carnes artesanais, pão brioche fresquinho, molhos especiais e um atendimento pensado para encantar do primeiro clique até a última mordida.</p>
+            <div class="about-list">
+              <div><i class="fa-solid fa-check"></i> Carnes artesanais e suculentas</div>
+              <div><i class="fa-solid fa-check"></i> Pão brioche macio e dourado</div>
+              <div><i class="fa-solid fa-check"></i> Entrega rápida e segura</div>
+              <div><i class="fa-solid fa-check"></i> Atendimento de qualidade</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding gallery-section" id="galeria">
+      <div class="container">
+        <div class="section-title reveal">
+          <span>Galeria</span>
+          <h2>Um visual que dá fome</h2>
+        </div>
+        <div class="gallery-grid reveal">
+          <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=700&q=80" alt="Hambúrguer artesanal" />
+          <img src="https://images.unsplash.com/photo-1639024471283-03518883512d?auto=format&fit=crop&w=700&q=80" alt="Batatas fritas crocantes" />
+          <img src="https://images.unsplash.com/photo-1629203851122-3726ecdf080e?auto=format&fit=crop&w=700&q=80" alt="Bebida gelada" />
+          <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=700&q=80" alt="Hambúrguer com queijo" />
+          <img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=700&q=80" alt="Porção de batata" />
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=700&q=80" alt="Ambiente de restaurante moderno" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding reviews-section" id="avaliacoes">
+      <div class="container">
+        <div class="section-title reveal">
+          <span>Avaliações</span>
+          <h2>Quem prova, recomenda</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4 reveal"><article class="review-card"><div class="stars">★★★★★</div><p>“Hambúrguer muito saboroso, entrega rápida e embalagem impecável. Virei cliente!”</p><strong>Mariana Alves</strong></article></div>
+          <div class="col-md-4 reveal delay-1"><article class="review-card"><div class="stars">★★★★★</div><p>“O pão brioche é perfeito e a carne veio no ponto. Melhor combo da cidade.”</p><strong>Lucas Ferreira</strong></article></div>
+          <div class="col-md-4 reveal delay-2"><article class="review-card"><div class="stars">★★★★★</div><p>“Atendimento excelente e cardápio lindo. O smash é sensacional!”</p><strong>Ana Beatriz</strong></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding contact-section" id="contato">
+      <div class="container">
+        <div class="section-title reveal">
+          <span>Contato</span>
+          <h2>Faça seu pedido ou fale conosco</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-7 reveal">
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6"><input type="text" id="name" placeholder="Seu nome" required minlength="3" /></div>
+                <div class="col-md-6"><input type="email" id="email" placeholder="Seu e-mail" required /></div>
+                <div class="col-md-6"><input type="tel" id="phone" placeholder="Seu telefone" required minlength="10" /></div>
+                <div class="col-md-6"><input type="text" id="subject" placeholder="Assunto" value="Pedido ABI burguer" /></div>
+                <div class="col-12"><textarea id="message" rows="5" placeholder="Digite sua mensagem" required minlength="10"></textarea></div>
+                <div class="col-12"><button type="submit" class="btn btn-primary-neon w-100">Enviar</button></div>
+              </div>
+              <p class="form-feedback" id="formFeedback" role="alert"></p>
+            </form>
+          </div>
+          <div class="col-lg-5 reveal delay-1">
+            <div class="contact-info">
+              <h3>Informações</h3>
+              <p><i class="fa-brands fa-whatsapp"></i> WhatsApp: (83) 99870-9157</p>
+              <p><i class="fa-brands fa-instagram"></i> Instagram: @abiburguer</p>
+              <p><i class="fa-brands fa-facebook"></i> Facebook: ABI burguer</p>
+              <p><i class="fa-solid fa-location-dot"></i> Rua dos Sabores, 100 - Centro</p>
+              <p><i class="fa-solid fa-clock"></i> Seg a Dom: 18h às 23h</p>
+              <a class="btn btn-outline-neon w-100 mt-3" href="https://wa.me/5583998709157" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-4"><a class="logo footer-logo" href="#inicio"><span class="logo-icon"><i class="fa-solid fa-burger"></i></span><span>ABI <strong>burguer</strong></span></a></div>
+        <div class="col-md-4"><div class="footer-links"><a href="#cardapio">Cardápio</a><a href="#promocoes">Promoções</a><a href="#contato">Contato</a></div></div>
+        <div class="col-md-4"><div class="social-links"><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></div></div>
+      </div>
+      <hr />
+      <p class="copyright">© <span id="year"></span> ABI burguer. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrinho de compras">
+    <div class="cart-header">
+      <h3><i class="fa-solid fa-cart-shopping"></i> Meu Carrinho</h3>
+      <button id="fecharCarrinho" aria-label="Fechar carrinho"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-summary">
+      <div><span>Subtotal</span><strong id="subtotal">R$ 0,00</strong></div>
+      <div><span>Desconto</span><strong id="discount">R$ 0,00</strong></div>
+      <div class="total"><span>Total</span><strong id="total">R$ 0,00</strong></div>
+      <button class="btn btn-primary-neon w-100" id="checkoutBtn">Finalizar Pedido</button>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <a class="whatsapp-float" href="https://wa.me/5583998709157" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/script.js"></script>
+</body>
+</html>
